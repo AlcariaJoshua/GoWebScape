@@ -1,0 +1,306 @@
+.app-developer {
+  background: #068132;
+  background: linear-gradient(
+    90deg,
+    rgba(6, 129, 50, 1) 0%,
+    rgba(30, 214, 96, 1) 100%
+  );
+  padding: 50px 0px;
+  .content {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 50px;
+    @media(max-width: 767px){
+        flex-direction: column;
+        gap: 30px;
+      }
+    h2 {
+      position: relative;
+      margin-left: 50px;
+      width: 40%;
+      font-size: clamp(30px, 6vw, 52px);
+      @media(max-width: 767px){
+        width: 100%;
+        margin: 0px;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 30px;
+      }
+      &::before {
+        content: "";
+        display: block;
+        height: 100%;
+        width: 2px;
+        background-color: #fff;
+        position: absolute;
+        left: -50px;
+        opacity: 0.6;
+        @media(max-width: 767px){
+            display: none;
+          }
+      }
+    }
+    p {
+      width: 60%;
+      color: #fff;
+      font-size: clamp(20px, 6vw, 22px);
+      line-height: 30px;
+      @media(max-width: 767px){
+        width: 100%;
+        margin: 0px;
+      }
+    }
+  }
+}
+
+.iphone-android-dev {
+  .content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    @media (max-width: 1199px) {
+      flex-direction: column-reverse;
+    }
+    .text {
+      width: 50%;
+      @media (max-width: 1199px) {
+        width: 100%;
+      }
+    }
+
+    .image {
+      width: 50%;
+      height: 100%;
+    }
+  }
+}
+
+.app-dev-range {
+    position: relative;
+    .overlay-image{
+        position: absolute;
+        top: -400px;
+        right: 0px;
+        width: 100%;
+    }
+  .content {
+    display: flex;
+    align-items: end;
+    @media (max-width: 1199px) {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 50px;
+    }
+    .text {
+      width: 70%;
+      @media (max-width: 1199px) {
+        width: 100%;
+      }
+      p {
+        font-size: clamp(20px, 6vw, 35px);
+      }
+      ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        @media (max-width: 767px) {
+          grid-template-columns: repeat(1, 1fr);
+        }
+        li {
+          font-size: 28px;
+          display: flex;
+          gap: 25px;
+          align-items: center;
+          font-weight: 200;
+          &::before {
+            content: "\f14a";
+            font-family: "Font Awesome 6 Free";
+            font-size: 28px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+    .image {
+      width: 30%;
+      height: 100%;
+      @media (max-width: 1199px) {
+        width: 50%;
+      }
+      img {
+        height: 100%;
+      }
+    }
+  }
+}
+
+.developments {
+  .content {
+    display: flex;
+    align-items: center;
+    @media(max-width: 767px){
+        flex-direction: column;
+    }
+    .image {
+      width: 40%;
+      @media(max-width: 767px){
+        width: 100%;
+      }
+    }
+    .text {
+      width: 60%;
+      padding: 70px;
+      @media(max-width: 767px){
+        width: 100%;
+      }
+      @media (max-width: 1199px) {
+        padding: 30px;
+      }
+    }
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+      @media(max-width: 767px){
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+section.app-dev-contact {
+  .content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0px 1px 8px -5px #000;
+    border-radius: 20px;
+    gap: 50px;
+    @media(max-width: 767px){
+        flex-direction: column;
+      }
+    .app-dev-info {
+      width: fit-content;
+      background: url(../images/contactsbanner.png) center / cover no-repeat;
+      padding: 50px;
+      border-radius: 20px;
+      position: relative;
+      z-index: 1;
+      @media(max-width: 767px){
+        width: 100%;
+      }
+      &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #0000007a;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+        border-radius: 20px;
+      }
+      h2 {
+        font-size: 40px;
+        color: #fff !important;
+      }
+      p {
+        color: #fff;
+      }
+
+      a {
+        color: #fff;
+        z-index: 999;
+      }
+
+      .number {
+        a {
+          margin-bottom: 20px;
+          display: flex;
+          gap: 15px;
+          &::before {
+            content: "\f2a0";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            display: block;
+          }
+        }
+      }
+
+      .email {
+        display: flex;
+        gap: 15px;
+        &::before {
+          content: "\f0e0";
+          font-family: "Font Awesome 6 Free";
+          font-weight: 900;
+          display: block;
+          color: #fff;
+        }
+      }
+    }
+    .app-dev-form {
+      width: 60%;
+      @media(max-width: 767px){
+        width: 100%;
+      }
+      .input-con {
+        display: flex;
+        gap: 50px;
+        margin-bottom: 30px;
+        &:last-child{
+          margin-bottom: 0px;
+        }
+        p {
+          margin: 0px;
+          width: 100%;
+        }
+      }
+      p.message-area{
+        margin: 0px;
+      }
+      .cta {
+        padding: 20px 80px !important;
+        background-color: #1ed660;
+        border-radius: 50px;
+        color: #fff !important;
+        transition: all ease 0.5s;
+        display: inline-flex !important;
+        width: fit-content;
+        border: none;
+      }
+      label {
+        color: #8d8d8d;
+        font-size: 12px;
+      }
+      input {
+        width: 100%;
+        padding: 20px;
+        border: none;
+        border-bottom: 1px solid #8d8d8d;
+        border-radius: 0px;
+        &::placeholder {
+          font-size: 14px;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+      textarea {
+        width: 100%;
+        padding: 20px;
+        border: none;
+        border-bottom: 1px solid #8d8d8d;
+        border-radius: 0px;
+        height: 150px;
+        padding-bottom: 50px;
+        &::placeholder {
+          font-size: 14px;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}

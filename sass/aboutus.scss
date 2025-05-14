@@ -1,0 +1,218 @@
+.what-we-do {
+  padding-bottom: 100px;
+  .content {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+
+    @media (max-width: 1199px) {
+      flex-direction: column;
+      gap: 50px;
+    }
+
+    .image {
+      width: 50%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px 20px;
+      @media (max-width: 1199px) {
+        width: 100%;
+        height: unset;
+      }
+      img {
+        @media (max-width: 1199px) {
+          height: 300px;
+          object-fit: cover;
+        }
+        &:nth-child(2) {
+          margin-top: 50px;
+          @media (max-width: 1199px) {
+            margin: 0px;
+          }
+        }
+        &:nth-child(3) {
+          margin-top: -50px;
+          @media (max-width: 1199px) {
+            margin: 0px;
+          }
+        }
+      }
+    }
+    .text {
+      width: 50%;
+      @media (max-width: 1199px) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.website-company {
+  background: #fff;
+  background: linear-gradient(
+    90deg,
+    rgb(255, 255, 255) 0%,
+    rgb(226 255 236) 100%
+  );
+  position: relative;
+  .overlay-img {
+    position: absolute;
+    top: -150px;
+    right: 0px;
+    width: 90%;
+  }
+  .content {
+    .title {
+      text-align: center;
+      h2 {
+        margin-bottom: 50px;
+        font-size: clamp(36px, 6vw, 48px);
+      }
+    }
+    .image-text-con {
+      display: flex;
+      gap: 50px;
+      align-items: center;
+      z-index: 1;
+      @media(max-width: 1199px){
+        flex-direction: column-reverse;
+        
+      }
+      .image {
+        width: 50%;
+        @media(max-width: 1199px){
+            width: 100%;
+            img{
+                object-fit: contain;
+            }
+        }
+      }
+      .text {
+        width: 50%;
+        @media(max-width: 1199px){
+            width: 100%;
+        }
+        p {
+          font-size: clamp(20px, 6vw, 24px);
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}
+
+.our-range {
+    @media(max-width: 1199px){
+        padding: 0px;
+    }
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 50px;
+    @media(max-width: 1199px){
+        flex-direction: column-reverse;
+    }
+    .text {
+      width: 40%;
+      @media(max-width: 1199px){
+        width: 100%;
+        padding: 0px 20px;
+      }
+      h2 {
+        margin-bottom: 50px;
+      }
+      ul {
+        li {
+          font-size: clamp(20px, 6vw, 32px);
+          margin-bottom: 20px;
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          font-weight: 200;
+
+          &::before {
+            content: "\f14a";
+            display: block;
+            font-family: "Font Awesome 6 Free";
+          }
+
+          &:last-child {
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+    .image {
+      width: 50%;
+      img{
+        box-shadow: 0px 10px 10px 0px #a8a8a8;
+        border-radius: 20px 0px 0px 20px;
+      }
+      @media(max-width: 1199px){
+        width: 100%;
+        img{
+            object-fit: cover;
+            border-radius: unset;
+        }
+      }
+    }
+  }
+}
+
+section.go-web-scape {
+  .content {
+    display: flex;
+    align-items: end;
+    @media(max-width: 1199px){
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+    .text {
+      width: 60%;
+      @media(max-width: 1199px){
+        width: 100%;
+      }
+      p {
+        font-size: 24px;
+        line-height: 50px;
+        text-align: justify !important;
+      }
+    }
+    .image {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      place-items: center;
+      @media(max-width: 1199px){
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+      }
+
+      @media(max-width: 767px){
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      img {
+        height: 265px;
+        width: 445px;
+        margin-bottom: 30px;
+        border-radius: 20px;
+        box-shadow: 0px 10px 10px 0px #7b7b7b;
+        @media(max-width: 1199px){
+            width: 100%;
+            margin-bottom: 0px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        &:last-child {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}

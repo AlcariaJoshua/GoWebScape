@@ -1,0 +1,90 @@
+.web-design-banner {
+  position: relative;
+  .image {
+    img {
+      filter: brightness(0.5);
+      height: 800px;
+      object-fit: cover;
+    }
+  }
+  .btn {
+    position: absolute;
+    bottom: 100px;
+    display: flex;
+    gap: 50px;
+    right: 200px;
+    align-items: center;
+
+    a {
+      color: #fff;
+      font-size: 22px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      &:first-child::before {
+        content: "\f053";
+        font-size: 20px;
+        color: #fff;
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+      }
+
+      &:last-child {
+        border: 2px solid #fff;
+        padding: 20px 50px;
+        border-radius: 50px;
+      }
+    }
+  }
+}
+
+section.web-design-details {
+  .content {
+    display: flex;
+    gap: 50px;
+    .industry-logo {
+      width: 40%;
+      .logo {
+        margin-bottom: 30px;
+        img {
+          height: 150px;
+
+        }
+      }
+      .text {
+        p {
+          color: #000;
+        }
+      }
+    }
+    .industry-desc {
+      width: 60%;
+      h2 {
+        font-size: 50px;
+        margin: 0px;
+        margin-bottom: 50px;
+      }
+      ul {
+        li {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px;
+          border-bottom: 1px solid #d6d6d6;
+          border-top: 1px solid #d6d6d6;
+          h4 {
+            font-weight: 700 !important;
+            font-size: 32px;
+            color: #6e6e6e;
+          }
+          p {
+            margin: 0px;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}

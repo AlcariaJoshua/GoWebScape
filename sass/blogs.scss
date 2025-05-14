@@ -1,0 +1,267 @@
+.blogs {
+  padding-bottom: 100px;
+  .content {
+    h2 {
+      font-size: 30px;
+      margin-bottom: 50px;
+    }
+    .latest-blogs {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(3, 300px);
+      gap: 30px;
+
+      @media (max-width: 1199px) {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .card {
+        .image {
+          width: 100%;
+          height: 300px;
+          img {
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        &:first-child {
+          grid-area: 1 / 1 / 3 / 4;
+          @media (max-width: 1199px) {
+            padding-bottom: 30px;
+          }
+          .image {
+            margin-bottom: 30px;
+          }
+          .image {
+            height: 300px;
+          }
+        }
+        &:nth-child(2) {
+          grid-area: 1/4/2/7;
+          display: flex;
+          gap: 30px;
+          @media (max-width: 767px) {
+            flex-direction: column;
+          }
+          .image {
+            width: 50%;
+            @media (max-width: 767px) {
+              width: 100%;
+            }
+          }
+          .card-content {
+            width: 50%;
+            @media (max-width: 767px) {
+              width: 100%;
+            }
+            h3 {
+              font-size: 20px;
+              @media (max-width: 1199px) {
+                font-size: 30px;
+              }
+              &::after {
+                display: none;
+              }
+            }
+          }
+        }
+        &:nth-child(3) {
+          grid-area: 2/4/3/7;
+          display: flex;
+          gap: 30px;
+          @media (max-width: 767px) {
+            flex-direction: column;
+          }
+          .image {
+            width: 50%;
+            @media (max-width: 767px) {
+              width: 100%;
+            }
+          }
+          .card-content {
+            width: 50%;
+            @media (max-width: 767px) {
+              width: 100%;
+            }
+            h3 {
+              font-size: 20px;
+              @media (max-width: 1199px) {
+                font-size: 30px;
+              }
+              &::after {
+                display: none;
+              }
+            }
+          }
+        }
+        &:nth-child(4) {
+          grid-area: 3/1/4/7;
+          display: flex;
+          gap: 30px;
+          padding-top: 30px;
+          @media (max-width: 1199px) {
+            padding-top: 0px;
+          }
+          @media (max-width: 767px) {
+            flex-direction: column;
+          }
+          .image {
+            width: 50%;
+            height: 300px;
+            @media (max-width: 767px) {
+              width: 100%;
+            }
+          }
+          .card-content {
+            width: 50%;
+            @media (max-width: 767px) {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.card {
+  .image {
+    height: 300px;
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .card-content {
+    .author {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 15px;
+      p {
+        color: #6941c6;
+        font-weight: 600;
+        font-size: 14px;
+        margin-bottom: 0px;
+      }
+      i {
+        font-size: 8px;
+        color: #6941c6;
+      }
+    }
+    h3 {
+      margin: 0px;
+      font-size: 30px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &::after {
+        content: "\f062";
+        display: block;
+        font-weight: 900;
+        font-family: "Font Awesome 6 Free";
+        transform: rotate(45deg);
+      }
+    }
+    p {
+      margin: 0px;
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 20px;
+      letter-spacing: 1.2px;
+      color: #667085;
+    }
+    .tags {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      p {
+        margin-bottom: 0px;
+        padding: 5px 20px;
+        border-radius: 20px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.other-blogs {
+  .content {
+    h2 {
+      font-size: 30px;
+      margin-bottom: 50px;
+    }
+    .card-con {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 50px 30px;
+      margin-bottom: 50px;
+      @media (max-width: 1199px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media (max-width: 767px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .image {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+.pagination.other-blogs-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .number {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    a {
+      padding: 15px 20px;
+      border-radius: 10px;
+      color: #000;
+      &.current {
+        color: #6941c6;
+        background-color: rgb(253 234 255 / 62%);
+      }
+    }
+  }
+  .next {
+    a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 20px;
+      color: #667085;
+      font-weight: 300;
+      &::after {
+        content: "\f061";
+        display: block;
+        font-family: "Font Awesome 6 Free";
+        font-weight: 600;
+      }
+    }
+  }
+  .previos{
+    a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 20px;
+        color: #667085;
+        font-weight: 300;
+        &::before {
+          content: "\f060";
+          display: block;
+          font-family: "Font Awesome 6 Free";
+          font-weight: 600;
+        }
+      }
+  }
+}

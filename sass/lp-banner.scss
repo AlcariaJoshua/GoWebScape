@@ -1,0 +1,77 @@
+.lp-banner {
+  .content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    .text {
+      width: 50%;
+      z-index: 1;
+      .overlay-img {
+        position: absolute;
+        top: -150px;
+        left: -235px;
+        z-index: -1;
+      }
+    }
+
+    .lp-banner-slider {
+      width: 50%;
+      @media(max-width: 1199px){
+        width: 100%;
+      }
+      .image {
+        // width: 50%;
+        height: unset;
+        img {
+          -webkit-mask-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 1) 30%
+          );
+          mask-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0) 5%,
+            rgba(0, 0, 0, 1) 50%
+          );
+          height: 100%;
+          object-fit: cover;
+          border-radius: 20px;
+        }
+
+        @media (max-width: 767px) {
+          height: 400px;
+        }
+      }
+    }
+
+    @media (max-width: 1199px) {
+      flex-direction: column-reverse;
+      gap: 30px;
+
+      .text {
+        width: 100%;
+      }
+      .image {
+        width: 100%;
+      }
+    }
+  }
+
+  .diveder {
+    margin-top: 60px;
+    height: 10px;
+    width: 100%;
+    background: green;
+    -webkit-mask-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 30%
+    );
+    mask-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 65%
+    );
+  }
+}

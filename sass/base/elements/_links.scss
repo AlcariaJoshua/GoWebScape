@@ -1,0 +1,25 @@
+a {
+	color: $color__link;
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+
+	&:visited {
+		color: $color__link-visited;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: #1ED660;
+	}
+
+	&:focus {
+		outline: thin dotted;
+	}
+
+	&:hover,S
+	&:active {
+		outline: 0;
+	}
+}

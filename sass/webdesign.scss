@@ -1,0 +1,43 @@
+section.website-design-container {
+    padding-bottom: 100px;
+  .content {
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-bottom: 70px;
+      .card {
+        .image {
+            overflow: hidden;
+          img {
+            height: 450px;
+            object-fit: cover;
+            transition: all ease .5s;
+          }
+          &:hover{
+            img{
+                transform: scale(1.2);
+                transition: all ease .5s;
+            }
+          }
+        }
+      }
+    }
+    .loadmore {
+      text-align: center;
+      button {
+        border: 1px solid #1ed660;
+        background-color: transparent;
+        padding: 20px 50px;
+        font-size: 22px;
+        cursor: pointer;
+        transition: all ease .5s;
+        &:hover{
+            background-color: #1ed660;
+            color: #fff;
+            transition: all ease .5s;
+        }
+      }
+    }
+  }
+}

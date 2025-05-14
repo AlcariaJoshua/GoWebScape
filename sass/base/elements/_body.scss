@@ -1,0 +1,18 @@
+body {
+	background: $color__background-body; // Fallback for when there is no custom background color defined.
+}
+
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+a{
+	text-decoration: none;
+}
+
+li{
+	list-style: none;
+}
+
