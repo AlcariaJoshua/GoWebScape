@@ -1,44 +1,48 @@
-.cms-can-do{
-    padding: 100px 0px 200px 0px ;
-    .content{
-        .title{
-            margin-bottom: 50px;
-            width: 80%;
-            margin: 0 auto;
-            margin-bottom: 70px;
-            h2{
-                text-align: center;
-                margin-bottom: 30px;
-            }
-            p{
-                text-align: center !important;
-                margin: 0px;
-            }
+.cms-can-do {
+    .content {
+      .title {
+        margin-bottom: 3.125rem;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 4.375rem;
+        @media(max-width: 1199px){
+          width: unset;
         }
-        .card-con{
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 30px;
-
-            @media(max-width: 1199px){
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            @media(max-width: 767px){
-                grid-template-columns: repeat(1, 1fr);
-            }
-            .card{
-                border: 1px solid #d6d6d6;
-                padding: 30px 40px;
-                border-radius: 20px;
-                h3{
-                    font-size: 30px;
-                    margin-bottom: 20px;
-                }
-                p{
-                    margin: 0px;
-                }
-            }
+        h2 {
+          text-align: center;
+          margin-bottom: 1.875rem;
         }
+        p {
+          text-align: center !important;
+          margin: 0rem;
+        }
+      }
+      .card-con {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.875rem;
+  
+        @media (max-width: 1199px) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+  
+        @media (max-width: 767px) {
+          grid-template-columns: repeat(1, 1fr);
+        }
+        .card {
+          border: 1px solid #d6d6d6;
+          padding: 1.875rem 2.5rem;
+          border-radius: 1.25rem;
+          h3 
+          {
+            font-size: 1.875rem;
+            margin-bottom: 1.25rem;
+          }
+          p {
+            margin: 0rem;
+          }
+        }
+      }
     }
-}
+  }
+  

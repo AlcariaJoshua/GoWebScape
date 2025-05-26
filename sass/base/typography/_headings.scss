@@ -17,26 +17,25 @@ color-text-white{
  color: #fff;
 }
 
-h1{
-	font-size: clamp(30px, 5vw, 80px) !important;
-	margin: 0px !important;
-	margin-bottom: 30px !important;
+h1 {
+	font-size: clamp(2.5rem, 5vw, 5rem) !important; 
+	margin: 0rem !important;
+	margin-bottom: 1.875rem !important; 
 	color: #000;
-	
 }
 
 h2 {
-	font-size: clamp(36px, 6vw, 70px);
+	font-size: clamp(2rem, 6vw, 4.375rem); 
 	color: #000 !important;
 }
 
 h3 {
-	font-size: clamp(30px, 5vw, 60px);
+	font-size: clamp(1.875rem, 5vw, 3.75rem);
 	color: #000;
 }
 
 h4 {
-	font-size: clamp(18px, 2vw, 24px);
+	font-size: clamp(1.125rem, 2vw, 1.5rem); 
 	line-height: 1.4;
 	color: #000;
 	margin: 0;
@@ -48,7 +47,7 @@ p {
 	line-height: 1.9;
 	font-weight: 400;
 	font-style: normal;
-	font-size: clamp(16px, 2.5vw, 20px);
+	font-size: clamp(1rem, 2.5vw, 1.25rem) !important; 
 	letter-spacing: normal;
 	text-align: unset !important;
 }

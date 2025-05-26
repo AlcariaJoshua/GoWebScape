@@ -13,7 +13,7 @@
         .lp-banner .content .text p{
                 margin: 0px;
                 margin-bottom: 20px;
-                font-size: 40px;
+                font-size: clamp(1.25rem, 2.5vw, 2.5rem);
         }
 
         .lp-banner .content .text p:last-child{
@@ -75,6 +75,12 @@
                 }
             }
         }
+
+        @media(max-width: 767px){
+            .lp-banner .content .text h1{
+                margin-bottom: 1rem !important;
+            }
+        }
     </style>
 
 <?php endif; ?>
@@ -84,7 +90,7 @@
 <?php get_template_part("template-parts/flatform-use") ?>
 
 
-<section class="cms-can-do">
+<section class="cms-can-do global-padding">
     <div class="wrapper">
         <div class="content">
             <div class="title">

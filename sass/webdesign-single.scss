@@ -5,6 +5,10 @@
       filter: brightness(0.5);
       height: 800px;
       object-fit: cover;
+
+      @media(max-width: 767px){
+        height: 100%;
+      }
     }
   }
   .btn {
@@ -15,6 +19,12 @@
     right: 200px;
     align-items: center;
 
+    @media(max-width: 767px){
+      bottom: 2rem;
+      right: 1rem;
+      gap: 1.2rem;
+    }
+
     a {
       color: #fff;
       font-size: 22px;
@@ -22,6 +32,11 @@
       display: flex;
       align-items: center;
       gap: 10px;
+
+      @media(max-width: 767px){
+        font-size: 18px;
+
+      }
 
       &:first-child::before {
         content: "\f053";
@@ -33,7 +48,7 @@
 
       &:last-child {
         border: 2px solid #fff;
-        padding: 20px 50px;
+            padding: 1rem 3rem;
         border-radius: 50px;
       }
     }
@@ -44,8 +59,15 @@ section.web-design-details {
   .content {
     display: flex;
     gap: 50px;
+
+    @media(max-width: 767px){
+      flex-direction: column;
+    }
     .industry-logo {
       width: 40%;
+      @media(max-width: 767px){
+        width: 100%;
+      }
       .logo {
         margin-bottom: 30px;
         img {
@@ -61,6 +83,9 @@ section.web-design-details {
     }
     .industry-desc {
       width: 60%;
+      @media(max-width: 767px){
+       width: 100%;
+      }
       h2 {
         font-size: 50px;
         margin: 0px;
@@ -69,6 +94,8 @@ section.web-design-details {
       ul {
         li {
           display: flex;
+          flex-wrap: wrap;
+          gap: 1rem;
           justify-content: space-between;
           align-items: center;
           padding: 20px;

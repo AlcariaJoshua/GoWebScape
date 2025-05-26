@@ -20,7 +20,7 @@
                     <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr($image_name); ?>">
 
                     <div class="small-images">
-                        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="slider: true; sets: true; autoplay: true; autoplay-interval: 2000;" >
+                        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="slider: true; center: true; sets: true; autoplay: true; autoplay-interval: 2000;" >
 
                             <div class="uk-slider-items  uk-child-width-1-2@l uk-child-width-1-1@m uk-child-width-1-1@s">
                                 <?php

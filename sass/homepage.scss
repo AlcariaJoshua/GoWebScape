@@ -5,7 +5,7 @@ section.banner {
   place-items: center;
   .content {
     display: flex;
-    gap: 50px;
+    gap: 3rem;
 
     .image {
       display: flex;
@@ -15,9 +15,9 @@ section.banner {
         height: 100%;
       }
       img {
-        height: 400px;
-        border-radius: 20px;
-        margin-bottom: 20px;
+        height: 25rem;
+        border-radius: 1.25rem;
+        margin-bottom: 1.25rem;
         @media(max-width: 1199px){
           height: unset;
         }
@@ -35,7 +35,7 @@ section.banner {
       display: flex;
       &::before {
         content: "";
-        height: 200px;
+        height: 12.5rem;
         width: 100%;
         position: absolute;
         background: #1ed660;
@@ -58,7 +58,7 @@ section.banner {
       p {
         color: #fff;
         font-weight: 400;
-        margin-bottom: 50px;
+        margin-bottom: 3.125rem;
         &:first-child {
           font-weight: 100;
         }
@@ -67,12 +67,12 @@ section.banner {
 
     .banner-btn {
       display: flex;
-      gap: 30px;
+      gap: 1.8rem;
 
       a {
         background-color: #000;
-        padding: 20px 50px;
-        border-radius: 50px;
+        padding: 1.25rem 3.125rem;
+        border-radius: 3.125rem;
         color: #fff;
         box-shadow: 0px 0px 1px;
         border: none;
@@ -96,7 +96,7 @@ section.banner {
     @media (max-width: 767px) {
       .banner-btn {
         flex-direction: column;
-        gap: 15px;
+        gap: .9rem;
         text-align: center;
       }
     }
@@ -104,16 +104,17 @@ section.banner {
 }
 
 .overview {
+
   .content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 1.8rem;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: .6rem;
     margin-top: -50px;
-    padding: 30px 80px;
+    padding: 1.8rem 5rem;
     box-shadow: 0px 1px 8px -5px #000;
 
     a {
@@ -150,7 +151,7 @@ section.banner {
 
 .our-services {
   @media(max-width: 1199px){
-    padding: 0px 20px;
+   
   }
   .content {
     .title {
@@ -229,11 +230,11 @@ section.banner {
       width: 50%;
       .title {
         h2 {
-          font-size: 60px !important;
+          font-size: 3.7rem !important;
         }
         @media (max-width: 767px) {
           h2 {
-            font-size: 40px !important;
+            font-size: 2rem !important;
           }
         }
         p {
@@ -298,7 +299,12 @@ section.banner {
 
     .title {
       width: 400px;
+      @media(max-width: 767px){
+        width: unset;
+      }
     }
+
+
 
     div#values-slider {
       box-shadow: 0px 1px 8px -5px #000;
@@ -313,7 +319,12 @@ section.banner {
       .values-slider {
         div {
           width: fit-content;
-          margin-right: 30px;
+          margin-right: 1.5rem;
+
+          @media(max-width: 767px){
+            width: 100%;
+            margin-right: 2rem;
+          }
           img {
             height: 350px;
             width: 250px;
@@ -334,10 +345,12 @@ section.banner {
     @media (max-width: 1199px) {
       div#values-slider {
         width: unset;
+        padding: 2rem;
       }
     }
 
     .values-btn {
+      display: flex;
       a {
         border: 1px solid #a4a4a4;
         color: #1ed660;
@@ -484,13 +497,13 @@ section.banner {
         margin-bottom: 30px;
     }
     h2 {
-      font-size: 50px !important;
+      font-size: clamp(2rem, 5vw, 3.125rem) !important;
       margin-bottom: 50px !important;
     }
 
     @media (max-width: 767px) {
       h2 {
-        font-size: 40px !important;
+        font-size: clamp(1.8rem, 5vw, 2.5rem)!important;
       }
     }
   }
@@ -682,10 +695,12 @@ section.banner {
   }
 
   .overview {
+    padding: 2rem;
     .content {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       padding: 30px;
+      margin-top: unset;
     }
     @media (max-width: 767px) {
       .content {
@@ -765,9 +780,11 @@ section.banner {
 
 @media (max-width: 767px) {
   .overview {
+    padding: 2rem;
     .content {
       gap: 20px;
       padding: 30px;
+      margin-top: unset;
 
       a {
         flex-direction: column;
@@ -781,5 +798,9 @@ section.banner {
         }
       }
     }
+  }
+
+  .ready-to-achieve{
+    padding: 0rem 2rem;
   }
 }

@@ -1,11 +1,15 @@
 section.website-design-container {
-    padding-bottom: 100px;
+    padding: 0rem 3rem 5rem 3rem;
   .content {
     .card-container {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 30px;
       margin-bottom: 70px;
+
+      @media(max-width: 1199px){
+        grid-template-columns: repeat(2, 1fr);
+      }
       .card {
         .image {
             overflow: hidden;

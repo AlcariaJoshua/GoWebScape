@@ -56,7 +56,6 @@
     </div>
 </section>
 
-
 <section class="developments global-padding">
     <?php
     // Check rows exists.

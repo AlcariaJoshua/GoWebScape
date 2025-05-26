@@ -1,9 +1,9 @@
 <section class="lp-overview">
     <div class="content">
-        <div class="text">
+        <div class="text" uk-scrollspy="cls: uk-animation-slide-left; target: h2, p; delay: 500; repeat: true;">
             <?php echo get_field('lp_overview_content') ?>
         </div>
-        <div class="text-content">
+        <div class="text-content" uk-scrollspy="cls: uk-animation-slide-right; delay: 500; repeat: true;">
             <?php
             // Check rows exists.
             if (have_rows('lp_overview_image')):
@@ -19,21 +19,21 @@
                 ?>
 
                 <div class="image">
-                <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr($image_name); ?>">
+                    <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr($image_name); ?>">
                 </div>
-               
-               <div class="text">
-                <p><?php echo get_sub_field('text') ?></p>
-               </div>
+
+                <div class="text">
+                    <p><?php echo get_sub_field('text') ?></p>
+                </div>
             </div>
             <?php endwhile; ?>
-                <?php else: ?>
-                    <p>No branding images found.</p>
-                <?php endif; ?>
+            <?php else: ?>
+            <p>No branding images found.</p>
+            <?php endif; ?>
         </div>
     </div>
 </section>
 
 <div class="lp-overview-desc">
-<p><?php echo get_field('lp_overview') ?></p>
+    <p><?php echo get_field('lp_overview') ?></p>
 </div>

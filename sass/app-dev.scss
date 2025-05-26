@@ -5,49 +5,52 @@
     rgba(6, 129, 50, 1) 0%,
     rgba(30, 214, 96, 1) 100%
   );
-  padding: 50px 0px;
+  padding: 3rem;
+  @media (max-width: 767px) {
+    padding: 3rem;
+  }
   .content {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    gap: 50px;
-    @media(max-width: 767px){
-        flex-direction: column;
-        gap: 30px;
-      }
+    gap: 3.125rem;
+    @media (max-width: 767px) {
+      flex-direction: column;
+      gap: 1.875rem;
+    }
     h2 {
       position: relative;
-      margin-left: 50px;
+      margin-left: 3.125rem;
       width: 40%;
-      font-size: clamp(30px, 6vw, 52px);
-      @media(max-width: 767px){
+      font-size: clamp(1.875rem, 5vw, 3.25rem);
+      @media (max-width: 767px) {
         width: 100%;
-        margin: 0px;
+        margin: 0rem;
         border-bottom: 1px solid #fff;
-        padding-bottom: 30px;
+        padding-bottom: 1.875rem;
       }
       &::before {
         content: "";
         display: block;
         height: 100%;
-        width: 2px;
+        width: 0.125rem;
         background-color: #fff;
         position: absolute;
-        left: -50px;
+        left: -3.125rem;
         opacity: 0.6;
-        @media(max-width: 767px){
-            display: none;
-          }
+        @media (max-width: 767px) {
+          display: none;
+        }
       }
     }
     p {
       width: 60%;
       color: #fff;
-      font-size: clamp(20px, 6vw, 22px);
-      line-height: 30px;
-      @media(max-width: 767px){
+      font-size: clamp(1.25rem, 6vw, 1.375rem);
+      line-height: 1.875rem;
+      @media (max-width: 767px) {
         width: 100%;
-        margin: 0px;
+        margin: 0rem;
       }
     }
   }
@@ -57,7 +60,7 @@
   .content {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 3.125rem;
     @media (max-width: 1199px) {
       flex-direction: column-reverse;
     }
@@ -76,20 +79,20 @@
 }
 
 .app-dev-range {
-    position: relative;
-    .overlay-image{
-        position: absolute;
-        top: -400px;
-        right: 0px;
-        width: 100%;
-    }
+  position: relative;
+  .overlay-image {
+    position: absolute;
+    top: -25rem;
+    right: 0rem;
+    width: 100%;
+  }
   .content {
     display: flex;
     align-items: end;
     @media (max-width: 1199px) {
       flex-direction: column-reverse;
       align-items: center;
-      gap: 50px;
+      gap: 3.125rem;
     }
     .text {
       width: 70%;
@@ -97,26 +100,30 @@
         width: 100%;
       }
       p {
-        font-size: clamp(20px, 6vw, 35px);
+        font-size: clamp(1.25rem, 6vw, 2.1875rem);
       }
       ul {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
+        gap: 1.5625rem;
         @media (max-width: 767px) {
           grid-template-columns: repeat(1, 1fr);
+          gap: 1rem;
         }
         li {
-          font-size: 28px;
+          font-size: 1.75rem;
           display: flex;
-          gap: 25px;
+          gap: 1.5625rem;
           align-items: center;
           font-weight: 200;
           &::before {
             content: "\f14a";
             font-family: "Font Awesome 6 Free";
-            font-size: 28px;
+            font-size: 1.75rem;
             font-weight: 500;
+          }
+          @media(max-width: 767px){
+            font-size: 1rem;
           }
         }
       }
@@ -138,29 +145,30 @@
   .content {
     display: flex;
     align-items: center;
-    @media(max-width: 767px){
-        flex-direction: column;
+    @media (max-width: 767px) {
+      flex-direction: column;
     }
     .image {
       width: 40%;
-      @media(max-width: 767px){
+      @media (max-width: 767px) {
         width: 100%;
       }
     }
     .text {
       width: 60%;
-      padding: 70px;
-      @media(max-width: 767px){
+      padding: 4.375rem;
+      @media (max-width: 767px) {
         width: 100%;
+        padding: 1rem 0rem 0rem 0rem !important;
       }
       @media (max-width: 1199px) {
-        padding: 30px;
+        padding: 1.875rem;
       }
     }
 
     &:nth-child(even) {
       flex-direction: row-reverse;
-      @media(max-width: 767px){
+      @media (max-width: 767px) {
         flex-direction: column;
       }
     }
@@ -171,21 +179,21 @@ section.app-dev-contact {
   .content {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    box-shadow: 0px 1px 8px -5px #000;
-    border-radius: 20px;
-    gap: 50px;
-    @media(max-width: 767px){
-        flex-direction: column;
-      }
+    padding: 1.25rem;
+    box-shadow: 0rem 0.0625rem 0.5rem -0.3125rem #000;
+    border-radius: 1.25rem;
+    gap: 3.125rem;
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
     .app-dev-info {
       width: fit-content;
       background: url(../images/contactsbanner.png) center / cover no-repeat;
-      padding: 50px;
-      border-radius: 20px;
+      padding: 3.125rem;
+      border-radius: 1.25rem;
       position: relative;
       z-index: 1;
-      @media(max-width: 767px){
+      @media (max-width: 767px) {
         width: 100%;
       }
       &::after {
@@ -194,13 +202,13 @@ section.app-dev-contact {
         height: 100%;
         background-color: #0000007a;
         position: absolute;
-        top: 0px;
-        left: 0px;
+        top: 0rem;
+        left: 0rem;
         z-index: -1;
-        border-radius: 20px;
+        border-radius: 1.25rem;
       }
       h2 {
-        font-size: 40px;
+        font-size: 2.5rem;
         color: #fff !important;
       }
       p {
@@ -214,9 +222,9 @@ section.app-dev-contact {
 
       .number {
         a {
-          margin-bottom: 20px;
+          margin-bottom: 1.25rem;
           display: flex;
-          gap: 15px;
+          gap: 0.9375rem;
           &::before {
             content: "\f2a0";
             font-family: "Font Awesome 6 Free";
@@ -228,7 +236,7 @@ section.app-dev-contact {
 
       .email {
         display: flex;
-        gap: 15px;
+        gap: 0.9375rem;
         &::before {
           content: "\f0e0";
           font-family: "Font Awesome 6 Free";
@@ -240,28 +248,38 @@ section.app-dev-contact {
     }
     .app-dev-form {
       width: 60%;
-      @media(max-width: 767px){
+      @media (max-width: 767px) {
         width: 100%;
       }
+
+      p.submit-btn {
+        float: right;
+      }
+
       .input-con {
         display: flex;
-        gap: 50px;
-        margin-bottom: 30px;
-        &:last-child{
-          margin-bottom: 0px;
+        gap: 3.125rem;
+        margin-bottom: 1.875rem;
+
+        @media(max-width: 767px){
+          flex-direction: column;
+          gap: 1rem;
+        }
+        &:last-child {
+          margin-bottom: 0rem;
         }
         p {
-          margin: 0px;
+          margin: 0rem;
           width: 100%;
         }
       }
-      p.message-area{
-        margin: 0px;
+      p.message-area {
+        margin: 0rem;
       }
       .cta {
-        padding: 20px 80px !important;
+        padding: 1.25rem 5rem !important;
         background-color: #1ed660;
-        border-radius: 50px;
+        border-radius: 3.125rem;
         color: #fff !important;
         transition: all ease 0.5s;
         display: inline-flex !important;
@@ -270,16 +288,16 @@ section.app-dev-contact {
       }
       label {
         color: #8d8d8d;
-        font-size: 12px;
+        font-size: 0.75rem;
       }
       input {
         width: 100%;
-        padding: 20px;
+        padding: 1.25rem;
         border: none;
         border-bottom: 1px solid #8d8d8d;
-        border-radius: 0px;
+        border-radius: 0rem;
         &::placeholder {
-          font-size: 14px;
+          font-size: 0.875rem;
         }
 
         &:focus {
@@ -288,14 +306,14 @@ section.app-dev-contact {
       }
       textarea {
         width: 100%;
-        padding: 20px;
+        padding: 1.25rem;
         border: none;
         border-bottom: 1px solid #8d8d8d;
-        border-radius: 0px;
-        height: 150px;
-        padding-bottom: 50px;
+        border-radius: 0rem;
+        height: 9.375rem;
+        padding-bottom: 3.125rem;
         &::placeholder {
-          font-size: 14px;
+          font-size: 0.875rem;
         }
         &:focus {
           outline: none;

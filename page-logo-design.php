@@ -28,7 +28,7 @@
                         </div>
                     <?php endwhile; ?>
                 <?php else: ?>
-                    <p>No branding images found.</p>
+                    <p>No logo</p>
                 <?php endif; ?>
             </div>
 
@@ -45,19 +45,19 @@
 <section class="design global-padding ">
     <div class="wrapper">
         <div class="content">
-            <div class="why-design">
+            <div class="why-design" uk-scrollspy="cls: uk-animation-fade; target: h3, p; delay: 500; repeat: true;" >
                 <?php echo get_field('why_design') ?>
             </div>
-            <div class="design-step">
+            <div class="design-step" uk-scrollspy="cls: uk-animation-slide-left; target: h3, p; delay: 500; repeat: true;">
                 <h3>Design Steps</h3>
-                <div class="steps-container">
+                <div class="steps-container" uk-scrollspy="cls: uk-animation-fade; target: .step; delay: 500; repeat: true;">
                 <?php if (have_rows('step')): ?>
                     <?php $counter = 1; ?>
                     <?php while (have_rows('step')): the_row(); ?>
                         <?php 
-                        $color = get_sub_field('bg_color'); // ✅ check actual field name in ACF
+                        $color = get_sub_field('bg_color');
                         $title = get_sub_field('title');
-                        $description = get_sub_field('descirption'); // ✅ corrected spelling
+                        $description = get_sub_field('descirption');
                         ?>
                         
                         <div class="step">
@@ -87,13 +87,13 @@
 <section class="consultation">
     <div class="wrapper">
         <div class="content">
-            <div class="text">
+            <div class="text" uk-scrollspy="cls: uk-animation-slide-left; target: h2, p, a; delay: 500; repeat: true;"> 
                 <?php echo get_field('schedule_content') ?>
                 <div class="cta">
-                    <a href="<?php echo get_field('schedule_book_appointment') ?>">BOOK YOUR APPOINTMENT</a>
+                    <a href="<?php echo get_field('schedule_book_appointment') ?>"><?php echo get_field('schedule_appointment_btn_title') ?></a>
                 </div>
             </div>
-            <div class="image">
+            <div class="image" uk-scrollspy="cls: uk-animation-slide-right; delay: 500; repeat: true;">
                 <?php
                     $image_url = get_field('schedule_image');
                     $image_name = basename($image_url);
@@ -103,7 +103,7 @@
             </div>
         </div>
         <div class="content">
-            <div class="text">
+            <div class="text" uk-scrollspy="cls: uk-animation-slide-left; target: h2, p; delay: 500; repeat: true;" >
                 <?php echo get_field('our_approach_content') ?>
                 <div class="info">
                     <ul>
@@ -121,12 +121,12 @@
                         </li>
                         <?php endwhile; ?>
                         <?php else: ?>
-                            <p>No branding images found.</p>
+                            <p>No found.</p>
                         <?php endif; ?>
                     </ul>
                 </div>
             </div>
-            <div class="image">
+            <div class="image" uk-scrollspy="cls: uk-animation-slide-right; delay: 500; repeat: true;">
                 <?php
                     $image_url = get_field('our_approach_image');
                     $image_name = basename($image_url);
@@ -144,7 +144,7 @@
             <div class="overlay-image">
                 <img src="<?php echo get_stylesheet_directory_uri() ?>/images/curvesgreen3.png" alt="SEO Campaign">
             </div>
-            <div class="text">
+            <div class="text" uk-scrollspy="cls: uk-animation-fade; target: h2, li; delay: 500; repeat: true;">
                 <?php echo get_field('what_you_see_content') ?>
             </div>
         </div>

@@ -49,8 +49,6 @@
                                 $word_count = 50;
                             }
                             
-
-
                             ?>
 
                 <div class="card uk-position-relative">
@@ -87,21 +85,21 @@
 
                         <div class="tags">
                             <?php
-                                                    $tags = get_the_tags();
-                                                    if ($tags) {
-                                                        foreach ($tags as $tag) {
-                                                            // Generate random RGB values
-                                                            $r = mt_rand(0, 255);
-                                                            $g = mt_rand(0, 255);
-                                                            $b = mt_rand(0, 255);
+                                $tags = get_the_tags();
+                                    if ($tags) {
+                                        foreach ($tags as $tag) {
+                                            // Generate random RGB values
+                                            $r = mt_rand(0, 255);
+                                            $g = mt_rand(0, 255);
+                                            $b = mt_rand(0, 255);
 
-                                                            $background = "rgba($r, $g, $b, 0.1)"; // Transparent background
-                                                            $textColor = "rgb($r, $g, $b)";         // Solid text color
+                                            $background = "rgba($r, $g, $b, 0.1)"; // Transparent background
+                                            $textColor = "rgb($r, $g, $b)";         // Solid text color
 
-                                                            echo '<p style="background-color: ' . $background . '; color: ' . $textColor . '; padding: 5px 20px; display: inline-block; margin: 5px 5px 0 0;">' . esc_html($tag->name) . '</p>';
-                                                        }
-                                                    }
-                                                ?>
+                                            echo '<p style="background-color: ' . $background . '; color: ' . $textColor . '; padding: 5px 20px; display: inline-block; margin: 5px 5px 0 0;">' . esc_html($tag->name) . '</p>';
+                                        }
+                                    }
+                            ?>
                         </div>
 
                         <a href="<?php echo get_permalink()?>" class="uk-position-cover"></a>
@@ -214,7 +212,7 @@
             </div>
 
             <!-- Pagination -->
-           
+
             <?php
                 function custom_paginate_links($total_pages, $current_page) {
                     $prev = '';

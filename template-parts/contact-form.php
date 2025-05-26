@@ -15,9 +15,10 @@
         <div class="content">
             <div class="title">
                 <?php if (is_page(30)) : ?>
-                <h1>Contact Us</h1>
+                <h1><?php echo the_title(); ?></h1>
                 <?php else : ?>
-                <h2>Let's Make And Impack</h2>
+                <h2>Let's Make An
+                     Impack</h2>
                 <?php endif;?>
 
 

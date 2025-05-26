@@ -1,6 +1,7 @@
-
-
 .unique-branding {
+  @media (max-width: 1199px) {
+    padding: 0rem 3rem 5rem 3rem;
+  }
   .content {
     .title {
       h2 {
@@ -8,7 +9,7 @@
         text-align: center;
         margin-bottom: 70px;
       }
-      p{
+      p {
         text-align: center !important;
       }
     }
@@ -17,6 +18,12 @@
       grid-template-columns: repeat(6, 1fr);
       gap: 30px;
       margin-bottom: 50px;
+      @media (max-width: 991px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      @media (max-width: 767px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
 
     .cta {
@@ -43,6 +50,11 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
         align-items: center;
+
+        @media (max-width: 991px) {
+          grid-template-columns: repeat(1, 1fr);
+        }
+
         .step {
           padding: 20px;
           border: 1px solid #00000070;
@@ -75,12 +87,14 @@ section.consultation {
     gap: 100px;
     align-items: center;
     margin-bottom: 200px;
-    @media(max-width: 1199px){
+    @media (max-width: 1199px) {
       flex-direction: column-reverse;
       gap: 50px;
     }
     .text {
       width: 50%;
+
+
       p {
         margin-bottom: 50px;
       }
@@ -88,21 +102,30 @@ section.consultation {
         a {
           font-weight: 600;
           font-size: 20px;
+          text-align: center;
         }
       }
-      @media(max-width: 1199px){
+      @media (max-width: 1199px) {
         width: unset;
+       
+      }
+
+      @media(max-width: 767px){
+        padding: 0rem 3rem;
       }
     }
     .image {
       width: 50%;
       img {
         border-radius: 20px;
+        @media(max-width: 767px){
+          border-radius: unset;
+        }
       }
-      @media(max-width: 1199px){
+      @media (max-width: 1199px) {
         width: 100%;
         height: 400px;
-        img{
+        img {
           height: 100%;
           object-fit: cover;
         }
@@ -125,6 +148,9 @@ section.consultation {
             grid-template-columns: repeat(2, 1fr);
             align-items: center;
             gap: 30px;
+            @media(max-width: 767px){
+              grid-template-columns: repeat(1, 1fr);
+            }
             li {
               display: flex;
               align-items: start;
@@ -153,19 +179,30 @@ section.consultation {
 .what-you-see {
   padding: 300px 0px;
   position: relative;
+  @media(max-width: 767px){
+    padding: 5rem 0rem;
+  }
   .content {
     display: flex;
     place-content: center;
     place-items: center;
     .text {
       width: 55%;
+      @media (max-width: 1199px) {
+        width: unset;
+      }
       h2 {
         margin-bottom: 50px;
+        text-align: center !important;
       }
       ul {
         padding: 50px 100px;
         background-color: #f0fff5;
         width: 100%;
+
+        @media(max-width: 767px){
+          padding: 3rem;
+        }
 
         li {
           display: flex;
@@ -190,6 +227,9 @@ section.consultation {
       position: absolute;
       top: -200px;
       width: 100%;
+      @media (max-width: 1199px) {
+        top: unset;
+      }
     }
   }
 }
@@ -205,36 +245,35 @@ section.consultation {
   .content {
     display: flex;
     gap: 50px;
-    @media(max-width: 1199px){
+    @media (max-width: 1199px) {
       flex-direction: column;
     }
-    .text{
-      h2{
+    .text {
+      h2 {
         font-size: 50px;
         margin-bottom: 50px;
         line-height: 80px;
       }
     }
-    .image-text{
+    .image-text {
       background-color: #ffffff;
       height: fit-content;
       padding: 30px;
       border: 1px solid #d6d6d6;
       border-radius: 20px;
       box-shadow: 0px 1px 8px -5px #000;
-      img{
+      img {
         border-bottom: 1px solid #d6d6d6;
         padding-bottom: 30px;
         margin-bottom: 30px;
       }
-      p{
+      p {
         margin: 0px;
       }
     }
   }
 }
 
-
-.expert-crafting-desc{
+.expert-crafting-desc {
   padding: 100px 50px;
 }

@@ -258,7 +258,7 @@ get_header();
             </div>
         </div>
         <div class="our-values">
-            <div class="title" uk-scrollspy="cls: uk-animation-slide-left; delay: 500; repear: true;">
+            <div class="title" uk-scrollspy="cls: uk-animation-slide-left; delay: 500; repeat: true;">
                 <?php echo get_field('our_values_title') ?>
                 <!-- External Arrow Buttons (Outside the slider container) -->
                 <div class="values-btn">
@@ -284,7 +284,7 @@ get_header();
                                 the_row();
                                 ?>
                     <div class="books">
-                        <a href="">
+                        <a href="<?php echo get_field("book_link") ?>">
                             <?php
 											$image_url = get_sub_field('image'); // Get full image URL
 											$image_name = basename($image_url);     // Get just the file name (e.g., banner.jpg)

@@ -1,6 +1,6 @@
 footer {
   background-color: #161616;
-  padding: 30px 0px;
+  padding: 2rem;
   .content {
     .links-container {
       display: grid;
@@ -60,6 +60,9 @@ footer {
         width: 50%;
         .image{
             height: unset;
+            img{
+              object-fit: contain;
+            }
         }
       }
 

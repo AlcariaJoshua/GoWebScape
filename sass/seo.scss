@@ -1,20 +1,23 @@
 section.why_seo_matter {
+  padding: 0rem 2rem;
+  @media (max-width: 767px) {
+    padding: 2rem;
+  }
+
   .content {
     display: flex;
     align-items: center;
-    gap: 100px;
+    gap: 6.25rem;
 
     @media (max-width: 1199px) {
       flex-direction: column;
-      gap: 50px;
+      gap: 3.125rem;
 
       .image {
         width: 100%;
         img {
-         
           object-fit: cover;
-          border-radius: 20px;
-         
+          border-radius: 1.25rem;
         }
       }
       .text {
@@ -32,27 +35,27 @@ section.why_seo_matter {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 0.3125rem;
 
     a {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 10px;
+      gap: 0.625rem;
 
       img {
-        width: 100px;
-        height: 100px;
+        width: 6.25rem;
+        height: 6.25rem;
         border: 1px solid grey;
         border-radius: 50%;
-        padding: 20px;
+        padding: 1.25rem;
         object-fit: contain;
       }
 
       > p {
         color: #000;
-        font-size: 25px;
-        margin: 0px;
+        font-size: 1.5625rem;
+        margin: 0rem;
       }
     }
 
@@ -65,15 +68,15 @@ section.why_seo_matter {
     width: 50%;
     .cta {
       a {
-        margin-bottom: 50px;
-        font-size: 20px;
+        margin-bottom: 3.125rem;
+        font-size: 1.25rem;
         font-weight: 600;
       }
     }
 
     h2 {
       text-align: right;
-      font-size: clamp(36px, 6vw, 50px);
+      font-size: clamp(2.25rem, 6vw, 3.125rem);
     }
   }
 }
@@ -83,7 +86,7 @@ section.go_web_scape {
     display: flex;
     align-items: center;
     place-content: end;
-    gap: 50px;
+    gap: 3.125rem;
 
     @media (max-width: 1199px) {
       flex-direction: column-reverse;
@@ -91,10 +94,13 @@ section.go_web_scape {
       .text {
         width: 100%;
         max-width: unset;
-        padding: 0px 20px;
+        padding: 0rem 1.25rem;
       }
       .image-con {
         width: 100%;
+        @media(max-width: 767px){
+          height: unset;
+        }
       }
     }
   }
@@ -103,54 +109,68 @@ section.go_web_scape {
     width: 50%;
     position: relative;
     background: #e9fbf4;
-    height: 755px;
-    padding: 30px;
+    height: 47.1875rem;
+    padding: 1.875rem;
+    .star-con{
+      @media(max-width: 767px){
+        display: none;
+        height: 100%;
+      }
+    }
 
     img:nth-of-type(1) {
-      width: 700px;
-      margin-bottom: 50px;
+      width: 43.75rem;
+      margin-bottom: 3.125rem;
+      @media(max-width: 767px){
+        margin-bottom: 0rem;
+      }
     }
 
     img:nth-of-type(2) {
-      height: 450px;
-      width: 545px;
+      height: 28.125rem;
+      width: 34.0625rem;
       position: absolute;
-      right: 50px;
-      bottom: 30px;
+      right: 3.125rem;
+      bottom: 1.875rem;
+
+      @media(max-width: 767px){
+        position: unset;
+        height: unset;
+      }
     }
   }
 
   .text {
     width: 50%;
-    max-width: 800px;
+    max-width: 50rem;
     h2 {
-        font-size: clamp(36px, 6vw, 45px);
+      font-size: clamp(2.25rem, 6vw, 2.8125rem);
     }
   }
 
   .star-con {
     svg {
-      height: 80px;
-      width: 80px;
+      height: 5rem;
+      width: 5rem;
     }
   }
 }
 
 .our-process {
-  margin-bottom: 100px;
+  margin-bottom: 6.25rem;
 
   .title {
     text-align: center;
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto 80px;
+    max-width: 75rem;
+    margin: 0 auto 5rem;
 
-    @media(max-width: 1199px){
-        max-width: unset;
+    @media (max-width: 1199px) {
+      max-width: unset;
     }
 
     h2 {
-        font-size: clamp(36px, 6vw, 50px);
+      font-size: clamp(2.25rem, 6vw, 3.125rem);
       font-weight: 600;
     }
   }
@@ -159,16 +179,16 @@ section.go_web_scape {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: auto;
-    gap: 30px;
+    gap: 1.875rem;
 
-    @media(max-width: 991px){
-        display: flex;
-        flex-direction: column;
+    @media (max-width: 991px) {
+      display: flex;
+      flex-direction: column;
     }
 
     .card {
-      padding: 20px 30px 30px;
-      border-radius: 10px;
+      padding: 1.25rem 1.875rem 1.875rem;
+      border-radius: 0.625rem;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -176,21 +196,21 @@ section.go_web_scape {
 
       .text {
         h3 {
-          font-size: 25px;
-          margin-bottom: 20px;
+          font-size: 1.5625rem;
+          margin-bottom: 1.25rem;
           opacity: 0.7;
         }
       }
 
       span {
-        font-size: 30px;
-        margin-bottom: 30px;
+        font-size: 1.875rem;
+        margin-bottom: 1.875rem;
       }
 
       p {
-        font-size: 20px;
+        font-size: 1.25rem;
         line-height: normal;
-        margin: 0px;
+        margin: 0rem;
       }
 
       &:nth-child(1) {
@@ -226,23 +246,21 @@ section.seo_starting {
   .content {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 3.125rem;
 
-    @media(max-width: 1199px){
-        flex-direction: column-reverse;
-        .text,
-        .image{
-            width: 100%;
-        }
+    @media (max-width: 1199px) {
+      flex-direction: column-reverse;
+      .text,
+      .image {
+        width: 100%;
+      }
 
-        .image {
-            img{
-               
-                object-fit: cover;
-                border-radius: 20px;
-               
-            }
+      .image {
+        img {
+          object-fit: cover;
+          border-radius: 1.25rem;
         }
+      }
     }
   }
 
@@ -254,33 +272,33 @@ section.seo_starting {
 
   .text {
     p {
-      font-size: 20px;
+      font-size: 1.25rem;
     }
 
     h2 {
       width: 100%;
-      max-width: 400px;
-      font-size: clamp(36px, 6vw, 50px);
+      max-width: 25rem;
+      font-size: clamp(2.25rem, 6vw, 3.125rem);
       font-weight: 700;
     }
   }
 
   hr {
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
   }
 
   .diveder {
-    height: 2px;
+    height: 0.125rem;
     width: 100%;
     background-color: grey;
     mask-image: unset !important;
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem;
     position: relative;
-    right: -50px;
-    min-width: 900px;
-    @media(max-width: 1199px){
-        min-width: unset;
-        right: unset;
+    right: -3.125rem;
+    min-width: 56.25rem;
+    @media (max-width: 1199px) {
+      min-width: unset;
+      right: unset;
     }
   }
 }
@@ -296,29 +314,29 @@ section.seo_starting {
 
   h2 {
     width: 100%;
-    font-size: clamp(36px, 6vw, 70px);
+    font-size: clamp(2.25rem, 6vw, 4.375rem);
     font-weight: 800;
     text-align: center;
-    margin-bottom: 60px !important;
+    margin-bottom: 3.75rem !important;
   }
 
   .text {
-    padding: 100px 200px;
+    padding: 6.25rem 12.5rem;
     background-color: rgba(189, 252, 172, 0.13);
 
-    @media(max-width: 991px){
-        padding: 30px;
+    @media (max-width: 991px) {
+      padding: 1.875rem;
     }
     ul {
       li {
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
         display: flex;
-        gap: 30px;
+        gap: 1.875rem;
         align-items: center;
         &::before {
           content: "\f058";
           display: block;
-          font-size: 30px;
+          font-size: 1.875rem;
           font-family: "Font Awesome 6 Free";
           font-weight: 900;
           color: #1ed660;
@@ -330,15 +348,16 @@ section.seo_starting {
 
   .overlay-image {
     position: absolute;
-    top: -100px;
+    top: -6.25rem;
     width: 100%;
+    right: 0px;
     transform: scaleX(-1);
   }
 }
 
 .digital-marketing {
   display: flex;
-  gap: 100px;
+  gap: 6.25rem;
   align-items: center;
 
   .text {
@@ -360,29 +379,34 @@ section.seo_starting {
 
 section.digital_scape {
   p {
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: normal;
   }
 
   .content {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 3.125rem;
+
+    .text{
+      h2{
+        font-size: clamp(2.25rem, 6vw, 4.375rem);
+      }
+    }
 
     @media (max-width: 1199px) {
       .digital-marketing {
         flex-direction: column;
-        gap: 50px;
-        .image{
-            width: 100%;
-            img{
-               
-                object-fit: cover;
-                border-radius: 20px;
-            }
+        gap: 3.125rem;
+        .image {
+          width: 100%;
+          img {
+            object-fit: cover;
+            border-radius: 1.25rem;
+          }
         }
-        .text{
-            width: 100%;
+        .text {
+          width: 100%;
         }
       }
     }

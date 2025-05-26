@@ -1,12 +1,12 @@
 .wrapper {
   width: 100%;
-  max-width: 1700px;
+  max-width: 106.25rem;
   margin: 0 auto;
-  padding: 0px 10px;
+  padding: 0rem !important;
 }
 
 .global-padding {
-  padding: 100px 0px;
+  padding: 6rem 3rem;
 }
 
 a {
@@ -40,6 +40,9 @@ a:hover {
 }
 
 .cta {
+  @media(max-width: 767px){
+    text-align: center;
+  }
   a {
     padding: 20px 70px !important;
     background-color: #1ed660;
@@ -47,8 +50,9 @@ a:hover {
     color: #fff !important;
     transition: all ease 0.5s;
     display: inline-flex !important;
-    font-size: 25px;
+    font-size: clamp(1.125rem, 4vw, 1.6rem);
     font-weight: 600;
+    text-align: center;
 
     &:hover {
       background-color: #009938;
@@ -91,7 +95,7 @@ ul {
 
 @media (max-width: 1199px) {
   .global-padding {
-    padding: 70px 0px;
+    padding: 6rem 4rem;
   }
 
   .image {
@@ -110,5 +114,9 @@ ul {
     img {
       height: 100%;
     }
+  }
+
+  .global-padding {
+    padding: 5rem 2rem;
   }
 }
